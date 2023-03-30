@@ -1,0 +1,124 @@
+* {
+  text-transform: capitalize;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0 !important;
+}
+
+main {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-size: cover;
+  background-color: hsl(0deg, 100%, 74%);
+}
+main .container {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+main .container .text-box {
+  width: 48%;
+  color: white;
+}
+main .container .text-box h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px !important;
+}
+main .container .text-box p {
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+main .container .form-box {
+  width: 52%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+main .container .form-box .pricing {
+  background-color: hsl(248deg, 32%, 49%);
+  padding: 17px 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: 0.85em;
+  -webkit-box-shadow: hsla(249deg, 10%, 26%, 0.288) 0px 6px;
+          box-shadow: hsla(249deg, 10%, 26%, 0.288) 0px 6px;
+}
+main .container .form-box .pricing span {
+  font-weight: 600;
+}
+main .container .form-box form {
+  -webkit-box-shadow: hsla(249deg, 10%, 26%, 0.288) 0px 6px;
+          box-shadow: hsla(249deg, 10%, 26%, 0.288) 0px 6px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: white;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+main .container .form-box form div input {
+  text-transform: none !important;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  outline: none;
+}
+main .container .form-box form div input:focus {
+  border-color: hsl(248deg, 32%, 49%);
+}
+main .container .form-box form div p {
+  margin-top: 5px !important;
+  text-align: end;
+  font-size: 0.7em;
+  color: hsl(0deg, 100%, 74%);
+}
+main .container .form-box form input[type=submit] {
+  background-color: hsl(154deg, 59%, 51%) !important;
+  border: none;
+  padding: 17px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9em;
+  -webkit-box-shadow: hsla(134deg, 100%, 50%, 0.288) 0px 6px;
+          box-shadow: hsla(134deg, 100%, 50%, 0.288) 0px 6px;
+  text-transform: uppercase !important;
+}
+main .container .form-box form p {
+  text-align: center;
+  font-size: 0.55em;
+  color: #bdbdbd;
+}
+main .container .form-box form p strong {
+  color: hsl(0deg, 100%, 74%);
+}

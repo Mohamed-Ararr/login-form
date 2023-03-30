@@ -1,0 +1,112 @@
+$dark-blue: hsl(249, 10%, 26%);
+$graylish-blue: hsl(246, 25%, 77%);
+$blue: hsl(248, 32%, 49%);
+$padding: 17px 20px;
+$border-radius: 10px;
+$input-padding: 15px;
+$input-border-radius: 5px;
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+
+* {
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0 !important;
+}
+
+main {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  .container {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    .text-box {
+      width: 48%;
+      color: white;
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px !important;
+      }
+      p {
+        font-size: 0.85em;
+        line-height: 1.6;
+      }
+    }
+    .form-box {
+      width: 52%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .pricing {
+        background-color: $blue;
+        padding: $padding;
+        border-radius: $border-radius;
+        text-align: center;
+        color: white;
+        font-size: 0.85em;
+        box-shadow: hsla(249, 10%, 26%, 0.288) 0px 6px;
+        span {
+          font-weight: 600;
+        }
+      }
+      form {
+        box-shadow: hsla(249, 10%, 26%, 0.288) 0px 6px;
+        border-radius: $border-radius;
+        width: 100%;
+        background-color: white;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        div {
+          input {
+            text-transform: none !important;
+            width: 100%;
+            padding: $input-padding;
+            border: 1px solid #d9d9d9;
+            border-radius: $input-border-radius;
+            outline: none;
+            &:focus {
+              border-color: $blue;
+            }
+          }
+          p {
+            // display: none;
+            margin-top: 5px !important;
+            text-align: end;
+            font-size: 0.7em;
+            color: $Red;
+          }
+        }
+        input[type="submit"] {
+          background-color: $Green !important;
+          border: none;
+          padding: $padding;
+          border-radius: $border-radius;
+          color: white;
+          font-size: 0.9em;
+          box-shadow: hsla(134, 100%, 50%, 0.288) 0px 6px;
+          text-transform: uppercase !important;
+        }
+        p {
+          text-align: center;
+          font-size: 0.55em;
+          color: #bdbdbd;
+
+          strong {
+            color: $Red;
+          }
+        }
+      }
+    }
+  }
+}
